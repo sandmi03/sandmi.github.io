@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+   <style>
+    
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: #E5E5E5;
+
+}
+
+#bigbox {
+    width: 1000px;
+    margin: 0 auto;
+    -moz-box-shadow: 2px 2px 5px #333333;
+    -webkit-box-shadow: 2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333;
+}
+
+#title {
+    position: relative;
+    width: 1000px;
+    font-size: 0px;
+}
+
+#title>img {
+    width: 1000px;
+    height: 130px;
+}
+
+#title div img {
+    position: absolute;
+    width: 80px;
+    top: 12px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+#mian {
+    background-color: #fff;
+    padding-top: 10px;
+    font-size: 0px;
+}
+
+#mian>div {
+    font-size: 16px;
+}
+
+#mian_left {
+    width: 180px;
+    display: inline-block;
+    height: 390px;
+
+}
+
+#mian_left a {
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    background: #525252;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#mian_left a:hover {
+    color: #171717;
+    font-weight: bold;
+}
+
+#mian_right {
+    height: 370px;
+    width: 810px;
+    background-color: #171717;
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#bg2 {
+    margin-top: 10px;
+    width: 160px;
+    margin-left: 10px;
+    height: 210px;
+    background-color: #171717;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 810px;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 400%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: none;
+}
+
+.wrapper li {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper li img {
+    width: 810px;
+    height: 370px;
+}
+
+.radius {
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radius li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.6;
+    margin: 0 3px;
+    padding: 0;
+    list-style: none;
+}
+
+.radius-active {
+    opacity: 1 !important;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+    background-clip: padding-box;
+}
+
+.prev {
+    width: 23px;
+    line-height: 34px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: darkgray;
+    opacity: 0;
+}
+
+.next {
+    width: 23px;
+    line-height: 34px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: darkgray;
+    opacity: 0;
+}
+
+.prev span,
+.next span {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+#bg2 img {
+    width: 160px;
+}
+
+
+
+
+
+#main3 {
+    position: relative;
+    width: 1000px;
+    height: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F1F1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#main3 p {
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 30px;
+}
+
+#main3 p:last-child {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 500px;
+}
+
+#main3 span {
+    font-weight: bold;
+}
+
+footer {
+    width: 1000px;
+    text-align: center;
+    line-height: 60px;
+    background: #525252;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-size: 14px;
+}
+
+#main4 {
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F1F1;
+}
+
+#main4 p {
+    width: 980px;
+    margin-left: 10px;
+    text-indent: 28px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#main4 span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#main5 {
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 50px;
+    background-color: #F1F1F1;
+}
+
+#main5 h3 {
+    text-align: center;
+}
+
+#main5 div {
+    margin: 0 auto;
+    width: 300px;
+}
+
+#main5 span {
+    display: inline-block;
+    width: 70px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+}
+
+
+.aihao{
+height: 750px;
+/* background-color: beige; */
+
+}
+
+.container{
+	width: 1000px;
+	height: 450px;
+	margin:60px auto;
+	position: relative;
+}
+ 
+.container img{
+	padding: 10px 10px 15px ;
+	background:white;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+}
+ 
+.pic{
+	width: 200px;
+	margin-right: 1%;
+}
+ 
+.container>img:hover{
+	  opacity:0.6;
+}
+
+
+
+   </style>
+</head>
+
+<body>
+    <div id="bigbox">
+        <div id="title">
+            <img src="./img/004.jpg" alt="">
+            <div>
+                <img src="./img/001.jpg" alt="">
+            </div>
+        </div>
+        <div id="mian">
+            <div id="mian_left">
+                <a href="">我的主页</a>
+                <a href="#main3">个人简介</a>
+                <a href="#aihao">我的爱好</a>
+                <a href="#">给我留言</a>
+                <div id="bg2">
+                    <img src="./img/016.jpg" alt="">
+                </div>
+            </div>
+            <div id="mian_right">
+                <div class="content">
+                    <ul class="wrapper">
+                        <li><img src="./img/R-C.jpg"></li>
+                       
+                    </ul>
+                    <ul class="radius">
+                    </ul>
+                    <div class="prev">
+                        <span>
+                            </span>
+                    </div>
+                    <div class="next">
+                        <span>></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="main3">
+            <p>
+                <span>姓名</span>：仝洋<br>
+                <span>性格</span>：开朗<br>
+                <span>身高</span>：183<br>
+                <span>家乡</span>：徐州 <br>
+                <span>爱好</span>：听歌，睡觉，看书，游戏，篮球<br>
+            </p>
+            <p>
+                <span>自我评价</span>
+                本人性格开朗、踏实、稳重、有活力，待人热情、真诚。喜欢在空余的时间看书和听音乐，从中减轻平时学习中带来的压力，还可以学到书本中学不到的知识，开拓自己的眼界、积极并不断进取是我做事的原则，谦虚和谨慎是我的优点，懂得不断从生活和学习中提高和完善自己、为人诚实，有良好的人际交往能力，具备相关的专业知识和认证细心的做事态度。
+            </p>
+        </div>
+    
+       
+        <div class="aihao" id="aihao">
+            <h2>爱好：</h2>   <hr>
+            <p>喜欢旅游，去过徐州、无锡、苏州、南京一些地方，<br>
+             拍照算是我的业余爱好,当然还有养乌龟<br>
+             平时喜欢听歌,打打游戏,学习一些编程,熟悉c语言 python<br>
+         本人也是一个不折不扣的小吃货 哈哈哈</p>   
+            <div class="container">
+             <img class="pic pic0" src="./img/010.jpg" >
+             <img class="pic pic1" src="./img/011.jpg" >
+             <img class="pic pic2" src="./img/012.jpg" >
+             <img class="pic pic3" src="./img/013.jpg" >
+             <img class="pic pic4" src="./img/014.jpg" >
+             <img class="pic pic5" src="./img/015.jpg" >
+             <img class="pic pic6" src="./img/016.jpg" >
+             <img class="pic pic7" src="./img/017.jpg" >
+             </div>
+            </div> 
+       
+        <footer>
+            <p>我们长得像空气，只是默默的存在</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
+
+
